@@ -1,0 +1,49 @@
+﻿@page
+@model Monitor_Cheltuieli.Pages.MonitorCheltuieli.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Monitor</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Monitor.Produs)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Monitor.Produs)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Monitor.Descriere)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Monitor.Descriere)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Monitor.Cantitate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Monitor.Cantitate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Monitor.Pret)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Monitor.Pret)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Monitor.Data_Achizitie)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Monitor.Data_Achizitie)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Monitor.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
